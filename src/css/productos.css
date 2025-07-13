@@ -1,0 +1,113 @@
+#catalogo{
+    align-items: center;
+}
+.produc{
+    border:1px solid black;
+    width:70%;
+    min-height:400px;
+    max-height:800px;
+    margin-left:15%;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap:10px;
+}
+
+.cards{
+    width:60%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+    align-items: center;
+    padding:5px;
+    margin:15%;
+    border:1px solid black;
+}
+
+.img{
+    height:200px;
+    width:80%;
+    margin-left:10%;
+}
+
+.price{
+    font-weight: bold;
+    font-size:1.17em;
+}
+
+.nom_prod{
+    font-size:1.12em;
+}
+
+#sale{
+    text-align: center;
+    background-color:coral;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+.iconos{
+    margin-left:30%;
+    display:inline-flex;
+    width:100px;
+    padding-top: 5px;
+}
+@media(min-width:651px) and (max-width:1024px){
+    .produc{
+    border:1px solid black;
+    width:70%;
+    min-height:400px;
+    max-height:1200px;
+    margin-left:15%;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap:10px;
+}
+
+.cards{
+    width:70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+    align-items: center;
+    padding:5px;
+    margin:15%;
+    border:1px solid black;
+}
+
+.iconos{
+    margin-left:25%;
+    padding-top:5px;
+}
+
+}
+
+@media(max-width:650px){
+    .produc{
+    border:1px solid black;
+    width:70%;
+    min-height:400px;
+    max-height:100%;
+    margin-left:15%;
+    display: grid;
+    grid-template-columns: repeat(1, 0.5fr);
+    gap:10px;
+}
+
+.cards{
+    width:210px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction:column;
+    align-items: center;
+    margin-left:40%;
+    border:1px solid black;
+}
+
+.iconos{
+    padding-top:10px;
+    margin-left:20%;
+}
+
+}

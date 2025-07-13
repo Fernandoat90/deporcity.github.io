@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>
+    if (!sessionStorage.getItem("aproved")) {
+      window.location.href = "loggin.html";
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/css/header.css" />
+  <link rel="stylesheet" href="./src/css/body.css" />
+  <link rel="stylesheet" href="./src/css/productos.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="principal-title">Deportcity</h1>
+    <button id="menuLateral" onclick="menu()">≡</button>
+    <nav id="sideNav">
+      <ul>
+        <li><a class="nav-opc" href="#catalogo">Catálogo</a></li>
+        <li><a class="nav-opc" href="#sale">Ofertas</a></li>
+        <li><a class="nav-opc" href="#contac">Contacto</a></li>
+        <li><button onclick="logout()" id="salir">Cerrar sesion</button></li>
+      </ul>
+    </nav>
+    <a id="cart"  href="carrito.html"><img class="cart" src="./src/img/cart.png"></a>
+  </header>
+
+  <main>
+
+    <section id="catalogo">
+      <!-- Aqui se cargaran los productos -->
+    </section>
+    <br>
+    <hr>
+    <br>
+    <section id="sale">
+      <h2>No hay productos en OFERTA por el momento</h2>
+    </section>
+  </main>
+
+  <footer>
+    <section id="contac">
+            <a href="https://github.com/Fernandoat90/gamezfull.github.io" target="_blank">
+                <img class="iconos" src="./src/img/github.png" alt="github">
+            </a>
+
+            <a href="https://www.linkedin.com/in/fernando-torres-b13199237/" target="_blank">
+                <img class="iconos" src="./src/img/linke.png" alt="linkedin">
+            </a>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="./src/js/carrito.js"></script>
+  <script src="./src/js/log_out.js"></script>
+  <script type="module" src="./src/js/cargaProd.js"></script>
+</body>
+</html>

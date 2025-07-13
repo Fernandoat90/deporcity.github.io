@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <script defer src="./src/js/loggin.js"></script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./src/js/links.js"></script>
+<body>
+  <form  id="form-log">
+    <label for="usu">Usuario</label>
+    <input type="text" id="usu" placeholder="Ej:miguel" required />
+    <label for="pass">Password</label>
+    <input type="password" id="pass" placeholder="******" required />
+    <button type="button" onclick="valid_usu()">Confirmar</button>
+    <p id="error"></p>
+    <p>¿No tienes un usuario?<a href="#" onclick="regist()">¡¡Registrate!!</a></p>
+  </form>
+</body>
+</html>
